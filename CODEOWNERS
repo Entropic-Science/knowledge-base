@@ -1,0 +1,30 @@
+# Knowledge base access control
+#
+# This file defines who must approve PRs for different parts of the repo.
+# Combined with branch protection rules (require PR reviews before merging),
+# this creates the two-tier access model described in README.md.
+#
+# How it works:
+# - Files matched by a pattern below require review from the listed team/users
+# - Files NOT matched here can be approved by any contributor with write access
+# - Later patterns override earlier ones
+#
+# See ADMIN_SETUP.md for how to configure branch protection to make this effective.
+
+# --- Admin-controlled files (require admin review) ---
+
+# Repo-level configuration and documentation
+/README.md                          @Entropic-Science/admins
+/CODEOWNERS                         @Entropic-Science/admins
+/ADMIN_SETUP.md                     @Entropic-Science/admins
+
+# Active projects files — only updated through accepted proposals
+/divisions/infrastructure/ACTIVE_PROJECTS.md    @Entropic-Science/admins
+/divisions/research/ACTIVE_PROJECTS.md          @Entropic-Science/admins
+/divisions/outreach-fundraising/ACTIVE_PROJECTS.md  @Entropic-Science/admins
+
+# --- Community-editable files (any write-access contributor can approve) ---
+# These are NOT listed here, which means any reviewer can approve PRs to them:
+#   - /divisions/*/ROSTER.md
+#   - /divisions/*/PROPOSALS.md
+#   - /library/**
