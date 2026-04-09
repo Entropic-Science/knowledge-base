@@ -2,14 +2,17 @@
 #
 # This file defines who must approve PRs for different parts of the repo.
 # Combined with branch protection rules (require PR reviews before merging),
-# this creates the two-tier access model described in README.md.
+# this creates the three-tier access model described in README.md.
 #
-# How it works:
-# - Files matched by a pattern below require review from the listed team/users
-# - Files NOT matched here can be approved by any contributor with write access
-# - Later patterns override earlier ones
+# Three tiers:
+#   1. Trusted contributors (@Entropic-Science/trusted) — bypass branch protection,
+#      can push directly to main. No PR needed for community-editable files.
+#   2. Regular contributors — PRs to community-editable files need 1 approving review
+#      from any contributor with write access.
+#   3. Admin-controlled files — PRs require review from @Entropic-Science/admins
+#      regardless of who submits. Trusted contributors should use PRs for these too.
 #
-# See ADMIN_SETUP.md for how to configure branch protection to make this effective.
+# See ADMIN_SETUP.md for how to configure branch protection and bypass actors.
 
 # --- Admin-controlled files (require admin review) ---
 
@@ -24,7 +27,8 @@
 /divisions/outreach-fundraising/ACTIVE_PROJECTS.md  @Entropic-Science/admins
 
 # --- Community-editable files (any write-access contributor can approve) ---
-# These are NOT listed here, which means any reviewer can approve PRs to them:
+# These are NOT listed here, which means any reviewer can approve PRs to them.
+# Trusted contributors can push directly without a PR.
 #   - /divisions/*/ROSTER.md
 #   - /divisions/*/PROPOSALS.md
 #   - /library/**

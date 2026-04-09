@@ -60,11 +60,17 @@ Same as joining — edit your row in `ROSTER.md` and submit a PR. Keep it curren
 
 ## Access model
 
-This repo uses two access tiers to balance openness with coordination:
+This repo uses three access tiers:
+
+### Trusted contributors (direct push)
+
+Members of the `@Entropic-Science/trusted` team can push directly to `main` — no PR or review needed. These are people the admins trust to add and edit content freely. They should still use PRs for admin-controlled files (see below), but this is a social norm, not a technical barrier.
+
+To get trusted access, ask an admin on Discord or during a weekly call.
 
 ### Community-editable (open PRs welcome)
 
-These files are designed for community members to add to directly:
+Everyone else contributes via pull requests. These files are designed for community members to add to directly:
 
 - All `ROSTER.md` files — sign yourself up, update your projects
 - All `PROPOSALS.md` files — propose ideas, anyone can contribute
@@ -74,7 +80,7 @@ PRs to these files need one approving review from any contributor with write acc
 
 ### Admin-controlled (requires admin/lead review)
 
-These files represent decisions and commitments, so changes need sign-off:
+These files represent decisions and commitments, so changes need sign-off even from trusted contributors:
 
 - All `ACTIVE_PROJECTS.md` files — only updated when proposals are accepted
 - `README.md` — this guide
