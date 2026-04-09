@@ -12,7 +12,7 @@ Add your entry to the table below and submit a PR. Update your entry when your f
 
 | Name / handle | Focus / current projects | Skills | Availability | Joined |
 |---------------|--------------------------|--------|--------------|--------|
-| @jordanmmck | QRNG-LLM inference pipeline | Systems engineering, ML infrastructure | Active | 2026-03 |
+| @orphiceye | QRNG-LLM inference pipeline | Systems engineering, ML infrastructure | Active | 2026-03 |
 | | | | | |
 
 <!-- Copy this row to add yourself:

@@ -12,7 +12,7 @@ Add your entry to the table below and submit a PR. Update your entry when your f
 
 | Name / handle | Focus / current projects | Skills | Availability | Joined |
 |---------------|--------------------------|--------|--------------|--------|
-| @orphiceye | Theoretical frameworks, consciousness and AI alignment | Philosophy of mind, research design | Active | 2026-03 |
+| @kluck77 | Theoretical frameworks, consciousness and AI alignment | Research design, community strategy | Active | 2026-03 |
 | | | | | |
 
 <!-- Copy this row to add yourself:
