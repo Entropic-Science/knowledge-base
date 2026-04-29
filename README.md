@@ -3,7 +3,7 @@
 Central hub for Entropic Science community knowledge: shared research, project documentation, division rosters, and proposals.
 
 **GitHub**: [github.com/Entropic-Science](https://github.com/Entropic-Science)
-**Discord**: [discord.gg/8ZrxF9qU](https://discord.gg/8ZrxF9qU)
+**Discord**: [discord.gg/2EbveaB2wS](https://discord.gg/2EbveaB2wS)
 **Community docs**: [community repo](https://github.com/Entropic-Science/community)
 
 ## How this repo is organized
